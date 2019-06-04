@@ -1,0 +1,94 @@
+@import 'reset';
+@import 'variables';
+
+body {
+	background: #f1ece8;
+	font-family: $fontePrimaria;
+}
+
+.cards {
+	display: flex;
+	flex: 1;
+
+	.card {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		background: #fff;
+		margin: 40px auto 40px auto;
+		padding: 70px 40px;
+		border: 1px solid #ebebeb;
+		box-shadow: 0 0 25px rgba(31,31,31, .1);
+		border-top-left-radius: 14px;
+		border-top-right-radius: 14px;
+		border-bottom-left-radius: 4px;
+		border-bottom-right-radius: 4px;
+
+		.tag-circle {
+			display: block;
+			position: absolute;
+			top: 64px;
+			left: 40px;
+			width: 12px;
+			height: 12px;
+			border-radius: 50%;
+			background: #f05d5d;
+		}
+
+		.card-img {
+			display: flex;
+			max-width: 100%;
+			justify-content: center;
+			margin-bottom: 40px;
+		}
+
+		.card-title {
+			font-weight: bold;
+			font-size: 22px;
+			margin-top: auto;
+			color: #515151;
+
+			&::after {
+				content: '';
+				height: 2px;
+				width: 20px;
+				background: #ebebeb;
+				display: block;
+				margin: 20px auto;
+				border: 1px solid #e1e1e1;
+			}
+		}
+
+		.card-description {
+			margin-top: 20px;
+			color: #818181;
+			line-height: 1.4em;
+			text-align: center;
+			font-size: 14px;
+		}
+	}
+}
+
+.btn {
+	margin-top: 30px;
+	background-color: #4e1681;
+	background-image: -webkit-linear-gradient(332deg, #4e1681 0%, #717171 100%);
+	background-image: -o-linear-gradient(332deg, #4e1681 0%, #717171 100%);
+	background-image: linear-gradient(62deg, #4e1681 0%, #717171 100%);
+	padding: 10px 60px;
+	border: none;
+	color: #fcf1fc;
+	text-transform: uppercase;
+	font-weight: bold;
+	font-size: 14px;
+	border-radius: 30px;
+	letter-spacing: 1px;
+
+	&:hover {
+		background-color: #4e1681;
+		background-image: -webkit-linear-gradient(332deg, #4e1681 0%, #515151 100%);
+		background-image: -o-linear-gradient(332deg, #4e1681 0%, #515151 100%);
+		background-image: linear-gradient(62deg, #4e1681 0%, #515151 100%);
+	}
+}

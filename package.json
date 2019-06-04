@@ -1,0 +1,12 @@
+{
+  "name": "filmes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node-sass src/scss/style.scss dist/css/style.css --output-style compressed"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
